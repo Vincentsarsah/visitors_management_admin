@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(17, 4, 36) !important;
+}
+
+.header-text {
+    margin-top: 2rem !important;
+}
+
+.admin-header {
+    height: 3rem;
+    margin: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.navcolor {
+    background-color: rgb(31, 28, 22) !important;
+}
+
+.admin-header-text {
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+    position: absolute;
+    text-align: center;
+    display: contents;
+    color: white;
+}
+
+.random_code {
+    margin-bottom: 3rem !important;
+    color: whitesmoke !important;
+}

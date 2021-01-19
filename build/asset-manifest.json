@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/visitors-management-admin/static/css/main.b9255139.chunk.css",
+    "main.js": "/visitors-management-admin/static/js/main.b8d968d0.chunk.js",
+    "main.js.map": "/visitors-management-admin/static/js/main.b8d968d0.chunk.js.map",
+    "runtime-main.js": "/visitors-management-admin/static/js/runtime-main.8e61bcef.js",
+    "runtime-main.js.map": "/visitors-management-admin/static/js/runtime-main.8e61bcef.js.map",
+    "static/js/2.b06e6c98.chunk.js": "/visitors-management-admin/static/js/2.b06e6c98.chunk.js",
+    "static/js/2.b06e6c98.chunk.js.map": "/visitors-management-admin/static/js/2.b06e6c98.chunk.js.map",
+    "static/js/3.c7a25430.chunk.js": "/visitors-management-admin/static/js/3.c7a25430.chunk.js",
+    "static/js/3.c7a25430.chunk.js.map": "/visitors-management-admin/static/js/3.c7a25430.chunk.js.map",
+    "index.html": "/visitors-management-admin/index.html",
+    "static/css/main.b9255139.chunk.css.map": "/visitors-management-admin/static/css/main.b9255139.chunk.css.map",
+    "static/js/2.b06e6c98.chunk.js.LICENSE.txt": "/visitors-management-admin/static/js/2.b06e6c98.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e61bcef.js",
+    "static/js/2.b06e6c98.chunk.js",
+    "static/css/main.b9255139.chunk.css",
+    "static/js/main.b8d968d0.chunk.js"
+  ]
+}
