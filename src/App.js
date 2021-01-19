@@ -1,16 +1,17 @@
 import React from 'react'
 import './App.css';
 import Contacts from './components/Contacts';
-import SideNavBar from './components/SideNavBar'
+import SideNavPage from './components/BootsrtapNab'
+import Home from './Home';
 
 
 function App() {
   return (
     <>
-    <SideNavBar />
+    <Home/>
+    <SideNavPage/>
     <div className="row">
       <div className="col-md-8 offset-md-2">
-      <Contacts ></Contacts>
       </div>
     </div>
 

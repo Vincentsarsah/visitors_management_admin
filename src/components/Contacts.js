@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ContactForm from "./ContactForm";
 import firebaseDb from "../firebase";
-import RandomCode from './RandomCode'
-import StaffList from './StaffList';
+
 
 const Contacts = () => {
 
@@ -56,20 +55,8 @@ const Contacts = () => {
   return (
         <>
             <div className="row">
-                <div className="col-md-7">
-                    <ContactForm {...({ currentId, contactObjects, addOrEdit })} ></ContactForm>
-                </div>
-                <div>
-                    <div className = "random_code">
-                    <RandomCode />
-                    </div>
-                   
-                    <div>
-                    <StaffList></StaffList>
-                    </div>
-                    
-                </div>
-                <div className="col-md-14">
+                
+                <div className="col-md-12">
                     <table className="table table-border table-stripped bg-light">
                         <thead className="thead-dark">
                             <tr>
@@ -77,7 +64,9 @@ const Contacts = () => {
                                 <th>Mobile</th>
                                 <th>Email</th>
                                 <th>Company</th>
-                                <th>Actions</th>
+                                <th>Host Name</th>
+                                <th>Code</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -88,6 +77,8 @@ const Contacts = () => {
                                         <td>{contactObjects[key].mobile}</td>
                                         <td>{contactObjects[key].email}</td>
                                         <td>{contactObjects[key].company}</td>
+                                        <td>{contactObjects[key].hostName}</td>
+                                        <td>{contactObjects[key].code}</td>
                                         <td className="bg-dark">
                                             <a className="btn text-primary" onClick={() => { setCurrentId(key) }}>
                                                 <i className="fas fa-pencil-alt"></i>
@@ -101,6 +92,10 @@ const Contacts = () => {
                             }
                         </tbody>
                     </table>
+                
+                </div>
+                <div className="col-md-8 ContactForm">
+                    <ContactForm {...({ currentId, contactObjects, addOrEdit })}/>
                 </div>
             </div>
         </>

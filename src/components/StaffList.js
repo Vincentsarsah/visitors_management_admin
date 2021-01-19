@@ -5,7 +5,7 @@ import Autocomplete from '@material-ui/lab/Autocomplete';
 
 export default function StaffList() {
   return (
-    <Autocomplete
+    <Autocomplete className = "staffList"
       id="combo-box-demo"
       options={top100Films}
       getOptionLabel={(option) => option.title}

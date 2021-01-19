@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App';
 import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
@@ -7,6 +8,7 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import { useTheme, makeStyles } from '@material-ui/core/styles';
 import { VariableSizeList } from 'react-window';
 import { Typography } from '@material-ui/core';
+
 
 const LISTBOX_PADDING = 8; // px
 
@@ -64,9 +66,9 @@ const ListboxComponent = React.forwardRef(function ListboxComponent(props, ref) 
   const gridRef = useResetCache(itemCount);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} >
       <OuterElementContext.Provider value={other}>
-        <VariableSizeList
+        <VariableSizeList 
           itemData={itemData}
           height={getHeight() + 2 * LISTBOX_PADDING}
           width="100%"
@@ -78,7 +80,7 @@ const ListboxComponent = React.forwardRef(function ListboxComponent(props, ref) 
           itemCount={itemCount}
         >
           {renderRow}
-        </VariableSizeList>
+        </VariableSizeList >
       </OuterElementContext.Provider>
     </div>
   );
@@ -124,7 +126,7 @@ export default function Virtualize() {
   const classes = useStyles();
 
   return (
-    <Autocomplete 
+    <Autocomplete  className = "random_code"
       id="virtualize-demo"
       style={{ width: 300 }}
       disableListWrap

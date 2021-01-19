@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(17, 4, 36) !important;
+    background-color: rgb(9, 2, 24) !important;
 }
 
 .header-text {
@@ -30,4 +30,24 @@ body {
 .random_code {
     margin-bottom: 3rem !important;
     color: whitesmoke !important;
+}
+
+.adimin {
+    color: white;
+}
+
+.ContactForm {
+    margin-left: 15rem;
+}
+
+.side-nav .collapsible>li a.collapsible-header.active {
+    background-color: rgba(255, 0, 0, 0.445);
+}
+
+.side-nav .collapsible>li a.collapsible-header:hover {
+    background-color: rgba(200, 20, 216, 0.788);
+}
+
+.side-nav .collapsible li a:hover {
+    background-color: rgba(70, 182, 35, 0.719);
 }
